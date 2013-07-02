@@ -55,11 +55,11 @@ EShopping::Application.routes.draw do
   #     resources :products
   #   end
   root 'products#index'
-  resources :products, only: [:index, :show]
+  resources :products, only: [:show]
 
   namespace :admin do
     root 'products#index'
-    resources :products,   except: [:destroy]
+    resources :products,   except: [:index, :destroy]
     resources :categories, except: [:destroy] do
       member do
         get :properties

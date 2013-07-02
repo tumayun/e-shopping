@@ -9,7 +9,7 @@
             <li class="nav-header"><%= t('activerecord.models.property') %></li>
             <li <%= active_class(params[:controller] == 'admin/properties') %>><%= link_to t('helpers.links.properties'), admin_properties_path %></li>
             <li class="nav-header"><%= t('activerecord.models.product') %></li>
-            <li <%= active_class(params[:controller] == 'admin/products') %>><%= link_to t('helpers.links.products'), admin_products_path %></li>
+            <li <%= active_class(params[:controller] == 'admin/products') %>><%= link_to t('helpers.links.products'), admin_root_path %></li>
           </ul>
         </div>
       </div>
