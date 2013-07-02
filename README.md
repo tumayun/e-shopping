@@ -18,6 +18,7 @@ rvm use 2.0.0
 rvm gemset create e-shopping
 git clone git@github.com:tumayun/e-shopping.git
 cd e-shopping
+cp config/database.yml.example config/database.yml
 rake db:create
 rake db:migrate
 rake db:seed

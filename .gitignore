@@ -34,3 +34,4 @@ pickle-email-*.html
 tags
 *.swp
 .keep
+/config/database.yml
