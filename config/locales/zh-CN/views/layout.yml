@@ -1,0 +1,9 @@
+zh-CN:
+  layouts:
+    header:
+      sign_in: '登录'
+      sign_up: '注册'
+      sign_out: '退出'
+      resend_confirmation: '没有收到确认邮件'
+      forget_pass: '忘记密码'
+      edit_user: '修改个人信息'

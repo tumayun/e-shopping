@@ -1,0 +1,37 @@
+<% properties.each_with_index do |property, index| %>
+  <% products_property_id, property_id = products_property_id_and_property_id(property) %>
+
+  <div index="<%= index %>" class="products_property">
+    <div class="control-group required product_products_properties_attributes_name_<%= index %> <%= error_class(property.errors[:name].present?) %>">
+      <label class="string required control-label" for="product_products_properties_attributes_name_<%= index %>">
+        <abbr title="<%= t('simple_form.required.text') %>"><%= t('simple_form.required.mark') %></abbr>
+        <%= ProductsProperty.human_attribute_name(:name) %>
+      </label>
+      <div class="controls">
+        <input class="string required" id="product_products_properties_attributes_name_<%= index %>" name="product[products_properties_attributes][<%= index %>][name]" type="text" value="<%= property.name %>" />
+        <% if products_property_id.to_i > 0 %>
+          <%= link_to t('helpers.links.destroy'), admin_products_property_path(products_property_id), data: { disable_with: t('helpers.links.disable_with') }, method: :delete, remote: true, class: 'remove_products_property' %>
+        <% else %>
+          <%= link_to t('helpers.links.destroy'), '#', class: 'remove_products_property' %>
+        <% end %>
+        <% if property.errors[:name].present? %>
+          <span class="help-inline"><%= property.errors[:name].join(', ') %></span>
+        <% end %>
+      </div>
+    </div>
+    <div class="control-group required product_products_properties_attributes_value_<%= index %> <%= error_class(property.errors[:value].present?) %>">
+      <label class="string required control-label" for="product_products_properties_attributes_value_<%= index %>">
+        <abbr title="<%= t('simple_form.required.text') %>"><%= t('simple_form.required.mark') %></abbr>
+        <%= ProductsProperty.human_attribute_name(:value) %>
+      </label>
+      <div class="controls">
+        <input class="string required" id="product_products_properties_attributes_value_<%= index %>" name="product[products_properties_attributes][<%= index %>][value]" type="text" value="<%= property.try(:value) %>" />
+        <% if property.errors[:value].present? %>
+          <span class="help-inline"><%= property.errors[:value].join(', ') %></span>
+        <% end %>
+      </div>
+    </div>
+    <input id="product_products_properties_attributes_property_id_<%= index %>" name="product[products_properties_attributes][<%= index %>][property_id]" type="hidden" value="<%= property_id %>" />
+    <input id="product_products_properties_attributes_id_<%= index %>" name="product[products_properties_attributes][<%= index %>][id]" type="hidden" value="<%= products_property_id %>" />
+  </div>
+<% end %>

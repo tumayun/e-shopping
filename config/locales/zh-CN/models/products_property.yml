@@ -1,0 +1,12 @@
+zh-CN:
+  activerecord:
+    models:
+      products_property: 商品
+    attributes:
+      products_property:
+        name: 属性名
+        value: 属性值
+        product_id: 商品ID
+        property_id: 属性ID
+        updated_at: 更新时间
+        created_at: 创建时间

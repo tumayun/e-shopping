@@ -1,0 +1,11 @@
+zh-CN:
+  activerecord:
+    models:
+      category: 分类
+    attributes:
+      category:
+        name: 分类名
+        created_at: 创建时间
+        updated_at: 更新时间
+        products_count: 商品数
+        properties_count: 属性数

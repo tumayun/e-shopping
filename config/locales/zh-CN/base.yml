@@ -1,0 +1,28 @@
+zh-CN:
+  brand: EShopping
+  create:
+    succeed: 创建成功
+    failed: 创建失败
+  update:
+    succeed: 更新成功
+    failed: 更新失败
+  destroy:
+    succeed: 删除成功
+    failed: 删除失败
+  helpers:
+    actions: 操作
+    titles:
+      new: 新建%{model}
+      edit: 编辑%{model}
+    links:
+      cancel: 取消
+      confirm: 确认
+      destroy: 删除
+      edit: 编辑
+      new: 新建
+      back: 返回列表页
+      disable_with: 删除中...
+      add: 增加
+      products: 商品列表
+      categories: 分类列表
+      properties: 属性列表

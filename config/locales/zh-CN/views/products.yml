@@ -1,0 +1,6 @@
+zh-CN:
+  products:
+    index:
+      title: 商品列表
+    show:
+      title: 商品详情

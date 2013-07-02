@@ -1,0 +1,21 @@
+zh-CN:
+  admin:
+    products:
+      index:
+        title: 商品列表
+        confirm: 确认删除该商品?
+        new: 新建商品
+      new:
+        add: 添加属性
+      edit:
+        add: 添加属性
+    properties:
+      index:
+        title: 属性列表
+        new: 新建属性
+    categories:
+      index:
+        title: 分类列表
+        new: 新建分类
+      properties:
+        confirm: 确认删除该属性?
